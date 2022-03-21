@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.mvvmbasicprep.Data.Quote
-import com.example.mvvmbasicprep.R
 import com.example.mvvmbasicprep.databinding.ActivityQuotesBinding
+import com.example.mvvmbasicprep.utilities.InjectUtiles
 
 
 class QuotesActivity : AppCompatActivity() {
@@ -37,6 +37,7 @@ class QuotesActivity : AppCompatActivity() {
             binding.textQuotes.text = stringBuilder.toString()
         })
 
+        // When button is clicked, instantiate a Quote and add it to DB through the ViewMode
         binding.buttonAddQuote.setOnClickListener{
             val quote = Quote(binding.editTextQuote.toString(),binding.editTextAuthor.toString())
             viewModel.addQuotes(quote)
