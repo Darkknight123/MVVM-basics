@@ -1,7 +1,8 @@
-package com.example.mvvmbasicprep
+package com.example.mvvmbasicprep.ui.quotes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mvvmbasicprep.R
 
 class QuotesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

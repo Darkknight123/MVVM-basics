@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMbasicPrep">
         <activity
-            android:name=".QuotesActivity"
+            android:name=".ui.quotes.QuotesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
